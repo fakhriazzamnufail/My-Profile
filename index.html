@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d18" id="themeColorMeta">
+  <meta name="description" content="Portofolio Fakhri Azzam Nufail, pelajar Rekayasa Perangkat Lunak yang tertarik pada pengembangan web, aplikasi, dan UI/UX.">
+  <meta property="og:title" content="Fakhri Azzam Nufail — Digital Portfolio">
+  <meta property="og:description" content="Mengenal Fakhri, proses belajar, dan proyek digital yang sedang dikembangkan.">
+  <meta property="og:type" content="website">
+  <title>Fakhri Azzam Nufail — Digital Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    (() => {
+      try {
+        const saved = localStorage.getItem('fakhri-theme');
+        const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+        document.documentElement.dataset.theme = saved || (prefersLight ? 'light' : 'dark');
+      } catch (_) {
+        document.documentElement.dataset.theme = 'dark';
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Langsung ke konten</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigasi utama">
+      <a class="brand" href="#beranda" aria-label="Fakhri, halaman utama">
+        <span class="brand-symbol">F<span>.</span></span>
+        <span class="brand-word">FAKHRI<span class="brand-period">/</span><small>PORTOFOLIO PRIBADI</small></span>
+      </a>
+      <div class="nav-right">
+        <div class="nav-links" id="navLinks">
+          <a href="#tentang">Tentang</a>
+          <a href="#keahlian">Keahlian</a>
+          <a href="#proyek">Proyek</a>
+          <a href="#kontak" class="nav-cta">Hubungi saya <span aria-hidden="true">↗</span></a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Aktifkan mode terang" title="Aktifkan mode terang">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.4A8.8 8.8 0 0 1 9.6 3.5 8.8 8.8 0 1 0 20.5 14.4Z"></path></svg>
+        </button>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section container" id="beranda">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="signal-dot"></span><span>HALO, DUNIA DIGITAL</span><span class="eyebrow-line"></span><span class="eyebrow-index">01 — 04</span></div>
+        <p class="hero-overline">Fakhri Azzam Nufail <span>·</span> Pelajar RPL</p>
+        <h1>Membangun ide<br>menjadi <span class="text-gradient">karya digital.</span></h1>
+        <p class="hero-description">Saya sedang mendalami pengembangan web dan aplikasi—mengubah ide menjadi solusi yang fungsional, berguna, dan dirancang dengan perhatian pada pengalaman pengguna.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#proyek">Jelajahi proyek <span aria-hidden="true">↗</span></a>
+          <a class="button button-quiet" href="#tentang">Kenali saya <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-facts">
+          <div class="fact-item"><span class="fact-label">PENDIDIKAN</span><strong>Kelas XII · RPL</strong></div>
+          <span class="fact-divider" aria-hidden="true"></span>
+          <div class="fact-item"><span class="fact-label">BERBASIS DI</span><strong>Sumatera Barat, ID</strong></div>
+        </div>
+      </div>
+
+      <div class="hero-stage reveal" aria-label="Ilustrasi profil digital Fakhri">
+        <div class="stage-grid" aria-hidden="true"></div>
+        <div class="stage-ring ring-large" aria-hidden="true"></div><div class="stage-ring ring-small" aria-hidden="true"></div>
+        <div class="orbit-node node-top" aria-hidden="true">&lt;/&gt;</div><div class="orbit-node node-side" aria-hidden="true">✳</div>
+        <div class="profile-core">
+          <div class="core-topline"><span>IDENTITY / 001</span><span class="core-dot"></span></div>
+          <div class="avatar-monogram" aria-label="Inisial Fakhri Azzam Nufail">FA<span>.</span></div>
+          <div class="core-name">Fakhri Azzam Nufail</div>
+          <div class="core-role">STUDENT · SOFTWARE DEVELOPMENT</div>
+          <div class="core-divider"></div>
+          <div class="core-bottom"><span><i></i> Sedang belajar & berkarya</span><span class="core-code">ID — 2026</span></div>
+        </div>
+        <div class="floating-panel code-panel" aria-label="Dekorasi kode">
+          <div class="panel-chrome"><span></span><span></span><span></span><small>about-me.js</small></div>
+          <div class="code-lines"><p><span class="line-num">01</span><span class="code-purple">const</span> <span class="code-blue">fakhri</span> = {</p><p><span class="line-num">02</span>&nbsp; role: <span class="code-green">'RPL Student'</span>,</p><p><span class="line-num">03</span>&nbsp; focus: <span class="code-green">'Web & Apps'</span>,</p><p><span class="line-num">04</span>&nbsp; learning: <span class="code-orange">true</span></p><p><span class="line-num">05</span>};<span class="code-cursor">▍</span></p></div>
+        </div>
+        <div class="floating-panel location-panel"><span class="location-icon">⌖</span><div><small>LOKASI</small><strong>Indonesia</strong></div></div>
+        <div class="stage-label">DIGITAL<br><span>CRAFT</span><b>+</b></div>
+      </div>
+    </section>
+
+    <section class="capability-bar" aria-label="Bidang minat">
+      <div class="container capability-inner"><span class="capability-label">BIDANG YANG SAYA TEKUNI</span><span class="capability-item"><i>01</i> Web Development</span><span class="capability-item"><i>02</i> Application Development</span><span class="capability-item"><i>03</i> UI/UX Design</span><span class="capability-item"><i>04</i> Database</span></div>
+    </section>
+
+    <section class="section container about-section" id="tentang">
+      <div class="section-heading reveal"><span class="section-kicker">01 / TENTANG SAYA</span><h2>Rasa ingin tahu<br>adalah <span class="text-gradient">awal dari karya.</span></h2><div class="heading-mark">FA<span>.</span></div></div>
+      <div class="about-content reveal">
+        <p class="about-lead">Saya adalah pelajar kelas XII Rekayasa Perangkat Lunak di Pondok Pesantren Ma'had Dar El-Ilmi, Sumatera Barat.</p>
+        <p>Saya tertarik mempelajari bagaimana teknologi dapat membantu menyelesaikan masalah sehari-hari. Karena itu, saya belajar melalui praktik: memahami kebutuhan, menyusun alur fitur, mencoba implementasi, lalu memperbaiki hasilnya.</p>
+        <p>Melalui Travelin dan konsep Suara Santri, saya terus berlatih menghubungkan sisi teknis dengan kebutuhan orang yang akan menggunakan sebuah produk digital.</p>
+        <div class="about-note"><span class="note-line"></span><p>“Tidak harus langsung sempurna. Yang penting terus belajar, mencoba, dan memperbaiki.”</p></div>
+      </div>
+    </section>
+
+    <section class="section stack-section" id="keahlian">
+      <div class="container">
+        <div class="section-topline reveal"><div class="section-heading"><span class="section-kicker">02 / TECH STACK</span><h2>Teknologi dalam<br><span class="text-gradient">proses belajar saya.</span></h2></div><p class="section-summary">Teknologi yang pernah digunakan atau sedang dipelajari. Tingkat kemampuan akan terus berkembang seiring praktik dan pengalaman.</p></div>
+        <div class="stack-grid reveal">
+          <article class="stack-card"><div class="stack-card-top"><span class="stack-icon icon-frontend">&lt;/&gt;</span><span class="stack-index">STACK_01</span></div><h3>Frontend</h3><p>Menyusun struktur dan tampilan antarmuka website yang responsif.</p><div class="tech-chips"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="stack-card-foot"><span class="mini-status"></span> UI & Interaksi</div></article>
+          <article class="stack-card"><div class="stack-card-top"><span class="stack-icon icon-backend">{ }</span><span class="stack-index">STACK_02</span></div><h3>Backend</h3><p>Memahami routing, autentikasi, logika aplikasi, dan pengelolaan data.</p><div class="tech-chips"><span>PHP</span><span>Laravel</span></div><div class="stack-card-foot"><span class="mini-status"></span> Logika aplikasi</div></article>
+          <article class="stack-card"><div class="stack-card-top"><span class="stack-icon icon-mobile">▦</span><span class="stack-index">STACK_03</span></div><h3>Application</h3><p>Mengeksplorasi ide dan alur fitur untuk pengalaman web maupun mobile.</p><div class="tech-chips"><span>Kotlin</span><span>App Concept</span></div><div class="stack-card-foot"><span class="mini-status"></span> Pengembangan aplikasi</div></article>
+          <article class="stack-card"><div class="stack-card-top"><span class="stack-icon icon-data">◈</span><span class="stack-index">STACK_04</span></div><h3>Data & Design</h3><p>Menyusun struktur data serta memikirkan alur pengguna dan konsistensi UI.</p><div class="tech-chips"><span>MySQL</span><span>UI/UX</span></div><div class="stack-card-foot"><span class="mini-status"></span> Struktur & pengalaman</div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container projects-section" id="proyek">
+      <div class="section-topline projects-topline reveal"><div class="section-heading"><span class="section-kicker">03 / PROYEK PILIHAN</span><h2>Belajar dengan<br><span class="text-gradient">membangun sesuatu.</span></h2></div><p class="section-summary">Proyek berikut mewakili minat saya terhadap transportasi digital serta ruang aspirasi yang lebih aman.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-travelin reveal">
+          <div class="project-visual travelin-visual"><div class="visual-header"><span>PROJECT_001</span><span class="visual-type">TRANSPORTATION</span></div><div class="map-grid" aria-hidden="true"></div><div class="route-path" aria-hidden="true"><span class="route-pin pin-start"></span><span class="route-dotted"></span><span class="route-pin pin-end"></span></div><div class="route-copy"><span>ANTARKOTA</span><span>ANTARPROVINSI</span></div><div class="travelin-wordmark">travelin<span>↗</span></div><div class="visual-badge">LARAVEL · WEB APP</div></div>
+          <div class="project-body"><div class="project-meta"><span class="project-status"><i></i> DALAM PENGEMBANGAN</span><span class="project-number">01 / 02</span></div><h3>Travelin</h3><p>Konsep aplikasi pemesanan transportasi antarkota dan antarprovinsi. Dirancang untuk mendukung hubungan pelanggan, perusahaan transportasi, armada, dan perjalanan dalam satu alur digital.</p><div class="project-tags"><span>Laravel</span><span>PHP</span><span>Kotlin</span><span>Database</span></div><div class="project-bottom"><span class="project-role">Dikembangkan oleh Fakhri</span><a href="https://github.com/fakhriazzamnufail" target="_blank" rel="noopener noreferrer">Profil GitHub <span aria-hidden="true">↗</span></a></div></div>
+        </article>
+        <article class="project-card project-suara reveal">
+          <div class="project-visual suara-visual"><div class="visual-header"><span>PROJECT_002</span><span class="visual-type">STUDENT WELLBEING</span></div><div class="suara-orbit orbit-a" aria-hidden="true"></div><div class="suara-orbit orbit-b" aria-hidden="true"></div><div class="suara-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="suara-title">Suara<br>Santri<span>.</span></div><div class="suara-subtitle">ASPIRASI · LAPORAN · KEPEDULIAN</div><div class="visual-badge">PRODUCT CONCEPT</div></div>
+          <div class="project-body"><div class="project-meta"><span class="project-status status-concept"><i></i> KONSEP APLIKASI</span><span class="project-number">02 / 02</span></div><h3>Suara Santri</h3><p>Konsep aplikasi aspirasi dan pelaporan untuk lingkungan sekolah atau pesantren, dengan perhatian pada privasi pelapor, pemisahan akses, dan alur tindak lanjut.</p><div class="project-tags"><span>Laravel</span><span>UI/UX</span><span>Web & Mobile</span></div><div class="project-bottom"><span class="project-role">Fokus pada rancangan solusi</span><a href="https://github.com/fakhriazzamnufail" target="_blank" rel="noopener noreferrer">Profil GitHub <span aria-hidden="true">↗</span></a></div></div>
+        </article>
+      </div>
+      <p class="project-footnote"><span>ⓘ</span> Tautan proyek saat ini menuju profil GitHub karena tautan repositori khusus belum ditambahkan. Deskripsi dapat diperbarui mengikuti progres proyek terbaru.</p>
+    </section>
+
+    <section class="section process-section">
+      <div class="container process-layout">
+        <div class="section-heading reveal"><span class="section-kicker">04 / CARA SAYA BERTUMBUH</span><h2>Progress over<br><span class="text-gradient">perfection.</span></h2><p class="section-summary">Perjalanan saya masih berlangsung. Setiap proyek adalah kesempatan untuk memahami hal baru.</p></div>
+        <div class="process-list reveal"><article class="process-item"><span class="process-count">01</span><div><span class="process-label">PAHAMI</span><h3>Kenali kebutuhan</h3><p>Mengurai masalah, menentukan tujuan, dan menyusun fitur yang dibutuhkan.</p></div><span class="process-arrow">↘</span></article><article class="process-item"><span class="process-count">02</span><div><span class="process-label">BANGUN</span><h3>Uji ide menjadi solusi</h3><p>Menerapkan pengetahuan yang sedang dipelajari menjadi bagian aplikasi yang nyata.</p></div><span class="process-arrow">↘</span></article><article class="process-item"><span class="process-count">03</span><div><span class="process-label">PERBAIKI</span><h3>Belajar dari proses</h3><p>Mengevaluasi hasil, memperbaiki antarmuka, dan mendokumentasikan perkembangan.</p></div><span class="process-arrow">↗</span></article></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="kontak"><div class="contact-decoration" aria-hidden="true"></div><div class="container contact-inner reveal"><span class="section-kicker">05 / TERHUBUNG</span><h2>Ada ide untuk<br><span class="text-gradient">dibangun bersama?</span></h2><p>Saya terbuka untuk terhubung, berbagi ide, dan belajar bersama seputar teknologi serta pengembangan aplikasi.</p><div class="contact-actions"><a class="button button-primary" href="mailto:fakhriazzamnufail5@gmail.com">Kirim email <span aria-hidden="true">↗</span></a><a class="button button-outline" href="https://github.com/fakhriazzamnufail" target="_blank" rel="noopener noreferrer">Lihat GitHub <span aria-hidden="true">↗</span></a></div><div class="contact-email"><span class="email-icon">@</span><a href="mailto:fakhriazzamnufail5@gmail.com">fakhriazzamnufail5@gmail.com</a></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-main"><a class="brand" href="#beranda"><span class="brand-symbol">F<span>.</span></span><span class="brand-word">FAKHRI<span class="brand-period">/</span><small>PORTOFOLIO PRIBADI</small></span></a><p>Dibuat dengan rasa ingin tahu<br>dan semangat untuk terus berkembang.</p><a class="back-top" href="#beranda">Kembali ke atas <span aria-hidden="true">↑</span></a></div><div class="container footer-bottom"><span>© <span id="year"></span> Fakhri Azzam Nufail</span><span>HTML · CSS · JavaScript</span><span class="footer-status"><i></i> Website portofolio pribadi</span></div></footer>
+</body>
+</html>
